@@ -7,7 +7,7 @@
 自分で設定した評価項目と、その重要度（重み）を掛け合わせることで、納得感のある結論を導き出します。
 
 ##  技術スタック
-- **Backend:** Java 17 / Spring Boot 3.5.10 / Spring Data JPA / H2 Database
+- **Backend:** Java 17 / Spring Boot 3.5.10 / Spring Data JPA / H2 Database/ (開発時: MySQL)
 - **Frontend:** JavaScript (Vanilla) / Chart.js / Bootstrap 5
 - **Build Tool:** Maven
 
@@ -22,6 +22,8 @@
 - **JSONの無限ループ問題の解消:** `Decision` と `Criterion` の双方向参照による循環参照エラーを、Jacksonアノテーション（`@JsonManagedReference`, `@JsonBackReference`）を適切にペアリングすることで解決しました。
 - **直感的なユーザー体験:** 数値入力と連動してグラフが描画される仕組みを構築し、ストレスのない操作感を実現しました。
 
+##  データベース
+​- **データベースの移行:**開発フェーズでは MySQLを使用して永続化を行いましたが、本リポジトリでは閲覧者がクローン後すぐに動作確認できるよう、環境構築不要なH2Databaseに構成を変更して公開しています。
 ##  実行方法
 ```bash
 git clone [https://github.com/ougi9047/decision-maker.git](https://github.com/ougi9047/decision-maker.git)
