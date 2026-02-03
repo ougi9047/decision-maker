@@ -30,8 +30,8 @@
 1. **プロジェクトのクローン**
    まずはローカル環境にソースコードをコピーします。
    `​``bash
-   git clone [https://github.com/ougi9047/decision-maker.git](https://github.com/ougi9047/decision-maker.git)
-   cd decision-maker
+  git clone https://github.com/ougi9047/decision-maker.git
+  cd decision-maker
    `​``
 
 2. **アプリケーションの起動**
