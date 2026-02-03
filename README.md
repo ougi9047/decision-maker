@@ -32,19 +32,22 @@
 1. **プロジェクトのクローン**
    まずはローカル環境にソースコードをコピーします。
 
-  ```bash
-  git clone https://github.com/ougi9047/decision-maker.git
-  cd decision-maker
+   ```bash
+   git clone https://github.com/ougi9047/decision-maker.git
    ```
-2. **アプリケーションの起動**
+   ```bash
+   cd decision-maker
+   ```
+
+3. **アプリケーションの起動**
    以下のコマンドでビルドとサーバー起動を同時に行います。
    ```bash
    ./mvnw spring-boot:run
    ```
    
-3. **ブラウザで確認する**
+4. **ブラウザで確認する**
    起動後、ブラウザで以下のアドレスにアクセスしてください。
-`http://localhost:8080`
+   `http://localhost:8080`
 
    
 
