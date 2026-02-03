@@ -25,10 +25,24 @@
 ## データベース
 - **データベースの構成:**　開発フェーズでは **MySQL** を使用して永続化を行いましたが、本リポジトリでは閲覧者がクローン後すぐに動作確認できるよう、環境構築不要な **H2 Database** に構成を変更して公開しています。
 
-##  実行方法
-```bash
-git clone [https://github.com/ougi9047/decision-maker.git](https://github.com/ougi9047/decision-maker.git)
-mvn spring-boot:run
-# ブラウザで http://localhost:8080 を開く
+##  セットアップ手順
 
-<img width="1104" height="1079" alt="image" src="https://github.com/user-attachments/assets/4349a592-56d5-481b-99a4-efc1ebdb4fb9" />
+1. **プロジェクトのクローン**
+   まずはローカル環境にソースコードをコピーします。
+   `​``bash
+   git clone [https://github.com/ougi9047/decision-maker.git](https://github.com/ougi9047/decision-maker.git)
+   cd decision-maker
+   `​``
+
+2. **アプリケーションの起動**
+   以下のコマンドでビルドとサーバー起動を同時に行います。
+   `​``bash
+   ./mvnw spring-boot:run
+   `​``
+
+3. **ブラウザで確認する**
+   起動後、ブラウザで以下のアドレスにアクセスしてください。
+`http://localhost:8080`
+
+   
+
